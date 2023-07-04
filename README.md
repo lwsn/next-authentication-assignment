@@ -8,19 +8,10 @@ The goal of this project is to create a website that allows users to authenticat
 
 The following requirements must be met in order to successfully complete this project:
 
-### Frontend
-
 - The site should have a simple, responsive and user-friendly design.
 - Users should be able to authenticate using an authentication provider supported by NextAuth.
-- Once authenticated, users should be presented with profile data retrieved from the backend.
+- Once authenticated, users should be presented with profile data retrieved from the [authentication provider](https://next-auth.js.org/providers/).
 - Users should be able to log out of the site.
-
-### Backend
-
-- The site should be built using Next.js.
-- The site should integrate at least one of the supported [authentication providers](https://next-auth.js.org/providers/) from NextAuth to authenticate users.
-- The site should be able to retrieve data from the account profile and return it to the frontend.
-- The site should be able to log users out and destroy any session data.
 
 ## Deliverables
 
