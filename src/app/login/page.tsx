@@ -1,4 +1,4 @@
-import SignIn from "@/components/SignIn";
+import ChooseProvider from "@/components/SignIn";
 import { getUser } from "@/utils/auth";
 import { Button, Card, CardContent, CardHeader, Stack } from "@mui/material";
 import { getProviders } from "next-auth/react";
@@ -15,7 +15,7 @@ export default async function Login() {
       <CardContent>
         <Stack spacing={1}>
           {Object.values(providers).map((provider) => (
-            <SignIn provider={provider} />
+            <ChooseProvider provider={provider} />
           ))}
           <Button fullWidth variant="contained" disabled>
             Sign in with github
