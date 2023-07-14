@@ -1,16 +1,15 @@
 "use client";
 
 import { Button } from "@mui/material";
-import { ClientSafeProvider, signIn } from "next-auth/react";
+import { signIn } from "next-auth/react";
 
-const ChooseProvider = ({ provider }: { provider: ClientSafeProvider }) => (
+const SignIn = () => (
   <Button
-    fullWidth
     variant="contained"
-    onClick={() => signIn(provider.id, { callbackUrl: "/user" })}
+    onClick={() => signIn(undefined, { callbackUrl: "/user" })}
   >
-    Sign in with {provider.name}
+    Sign in
   </Button>
 );
 
-export default ChooseProvider;
+export default SignIn;

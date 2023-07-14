@@ -1,4 +1,4 @@
-import ChooseProvider from "@/components/SignIn";
+import ChooseProvider from "@/components/ChooseProvider";
 import { getUser } from "@/utils/auth";
 import { Button, Card, CardContent, CardHeader, Stack } from "@mui/material";
 import { getProviders } from "next-auth/react";
